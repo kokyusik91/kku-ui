@@ -3,14 +3,14 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../lib/cn";
 
 const cardVariants = cva(
-  "font-nb text-nb-text border-nb border-nb-border rounded-nb bg-nb-surface",
+  "font-skin text-skin-text border-skin border-skin-border rounded-skin bg-skin-surface",
   {
     variants: {
       shadow: {
         none: "",
-        sm: "shadow-nb-sm",
-        md: "shadow-nb-md",
-        lg: "shadow-nb-lg",
+        sm: "shadow-skin-sm",
+        md: "shadow-skin-md",
+        lg: "shadow-skin-lg",
       },
       padding: {
         none: "p-0",

@@ -53,16 +53,16 @@ export const SocialPost = React.forwardRef<HTMLDivElement, SocialPostProps>(
             <AvatarFallback color="accent">{initials}</AvatarFallback>
           </Avatar>
           <div className="flex flex-col">
-            <span className="font-nb text-sm font-bold">{author.name}</span>
-            <span className="font-nb text-xs text-nb-text/50">
+            <span className="font-skin text-sm font-bold">{author.name}</span>
+            <span className="font-skin text-xs text-skin-text/50">
               @{author.handle} &middot; {timestamp}
             </span>
           </div>
         </div>
 
-        <p className="font-nb text-sm leading-relaxed">{content}</p>
+        <p className="font-skin text-sm leading-relaxed">{content}</p>
 
-        <div className="flex items-center gap-1 border-t-2 border-nb-border pt-3">
+        <div className="flex items-center gap-1 border-t-2 border-skin-border pt-3">
           <Button variant="ghost" size="sm" onClick={onLike} className="gap-1.5">
             <HeartIcon />
             <span className="text-xs">{likes}</span>

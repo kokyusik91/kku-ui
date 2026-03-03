@@ -32,13 +32,13 @@ export const PricingCard = React.forwardRef<HTMLDivElement, PricingCardProps>(
     ref,
   ) => {
     const colorBorderMap: Record<string, string> = {
-      primary: "border-nb-primary",
-      secondary: "border-nb-secondary",
-      accent: "border-nb-accent",
-      success: "border-nb-success",
-      warning: "border-nb-warning",
-      danger: "border-nb-danger",
-      info: "border-nb-info",
+      primary: "border-skin-primary",
+      secondary: "border-skin-secondary",
+      accent: "border-skin-accent",
+      success: "border-skin-success",
+      warning: "border-skin-warning",
+      danger: "border-skin-danger",
+      info: "border-skin-info",
     };
 
     return (
@@ -64,17 +64,17 @@ export const PricingCard = React.forwardRef<HTMLDivElement, PricingCardProps>(
         )}
 
         <div className="text-center">
-          <h3 className="font-nb text-lg font-bold">{title}</h3>
+          <h3 className="font-skin text-lg font-bold">{title}</h3>
           <div className="mt-2 flex items-baseline justify-center gap-1">
-            <span className="font-nb text-4xl font-black">{price}</span>
-            <span className="font-nb text-sm text-nb-text/60">{period}</span>
+            <span className="font-skin text-4xl font-black">{price}</span>
+            <span className="font-skin text-sm text-skin-text/60">{period}</span>
           </div>
         </div>
 
         <ul className="flex flex-col gap-2">
           {features.map((feature) => (
-            <li key={feature} className="flex items-center gap-2 font-nb text-sm">
-              <span className="text-nb-success font-bold">&#10003;</span>
+            <li key={feature} className="flex items-center gap-2 font-skin text-sm">
+              <span className="text-skin-success font-bold">&#10003;</span>
               {feature}
             </li>
           ))}

@@ -1,6 +1,6 @@
 {
   "name": "@kokyusik91/kku-ui",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Multi-skin design kit built on Radix UI primitives with CVA variants",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -19,12 +19,32 @@
     },
     "./preset": {
       "import": {
-        "types": "./dist/preset.d.ts",
-        "default": "./dist/preset.js"
+        "types": "./dist/presets/index.d.ts",
+        "default": "./dist/presets/index.js"
       },
       "require": {
-        "types": "./dist/preset.d.cts",
-        "default": "./dist/preset.cjs"
+        "types": "./dist/presets/index.d.cts",
+        "default": "./dist/presets/index.cjs"
+      }
+    },
+    "./preset/neo-brutal": {
+      "import": {
+        "types": "./dist/presets/neo-brutal.d.ts",
+        "default": "./dist/presets/neo-brutal.js"
+      },
+      "require": {
+        "types": "./dist/presets/neo-brutal.d.cts",
+        "default": "./dist/presets/neo-brutal.cjs"
+      }
+    },
+    "./preset/modern": {
+      "import": {
+        "types": "./dist/presets/modern.d.ts",
+        "default": "./dist/presets/modern.js"
+      },
+      "require": {
+        "types": "./dist/presets/modern.d.cts",
+        "default": "./dist/presets/modern.cjs"
       }
     }
   },

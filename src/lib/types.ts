@@ -1,6 +1,7 @@
-export type NeoBrutalSize = "sm" | "md" | "lg";
+// New canonical names
+export type KkuSize = "sm" | "md" | "lg";
 
-export type NeoBrutalColor =
+export type KkuColor =
   | "primary"
   | "secondary"
   | "accent"
@@ -9,8 +10,18 @@ export type NeoBrutalColor =
   | "danger"
   | "info";
 
-export type NeoBrutalVariant = "filled" | "outline" | "ghost";
+export type KkuVariant = "filled" | "outline" | "ghost";
 
-export interface NeoBrutalBaseProps {
+export interface KkuBaseProps {
   shadow?: "sm" | "md" | "lg" | "none";
 }
+
+// Backward-compatible aliases
+/** @deprecated Use KkuSize instead */
+export type NeoBrutalSize = KkuSize;
+/** @deprecated Use KkuColor instead */
+export type NeoBrutalColor = KkuColor;
+/** @deprecated Use KkuVariant instead */
+export type NeoBrutalVariant = KkuVariant;
+/** @deprecated Use KkuBaseProps instead */
+export type NeoBrutalBaseProps = KkuBaseProps;

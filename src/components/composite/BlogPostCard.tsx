@@ -42,7 +42,7 @@ export const BlogPostCard = React.forwardRef<
       >
         {/* Cover Image */}
         {image && (
-          <div className="w-full aspect-video border-b-nb border-nb-border overflow-hidden">
+          <div className="w-full aspect-video border-b-skin border-skin-border overflow-hidden">
             <img
               src={image}
               alt={title}
@@ -64,10 +64,10 @@ export const BlogPostCard = React.forwardRef<
             </div>
           )}
 
-          <h3 className="font-nb text-lg font-bold text-nb-text leading-snug">
+          <h3 className="font-skin text-lg font-bold text-skin-text leading-snug">
             {title}
           </h3>
-          <p className="font-nb text-sm text-nb-text/70 mt-1.5 line-clamp-2">
+          <p className="font-skin text-sm text-skin-text/70 mt-1.5 line-clamp-2">
             {excerpt}
           </p>
         </div>
@@ -86,10 +86,10 @@ export const BlogPostCard = React.forwardRef<
             )}
           </Avatar>
           <div className="flex flex-col">
-            <span className="font-nb text-sm font-semibold text-nb-text">
+            <span className="font-skin text-sm font-semibold text-skin-text">
               {author.name}
             </span>
-            <span className="font-nb text-xs text-nb-text/50">{date}</span>
+            <span className="font-skin text-xs text-skin-text/50">{date}</span>
           </div>
         </div>
       </Card>

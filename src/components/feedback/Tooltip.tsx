@@ -16,16 +16,16 @@ export const TooltipContent = React.forwardRef<
       sideOffset={sideOffset}
       className={cn(
         "z-50 px-3 py-1.5",
-        "font-nb text-nb-text text-sm font-medium",
-        "bg-nb-surface border-nb border-nb-border rounded-nb shadow-nb-sm",
-        "animate-nb-pop",
+        "font-skin text-skin-text text-sm font-medium",
+        "bg-skin-surface border-skin border-skin-border rounded-skin shadow-skin-sm",
+        "animate-skin-pop",
         className
       )}
       {...props}
     >
       {children}
       <TooltipPrimitive.Arrow
-        className="fill-nb-border"
+        className="fill-skin-border"
         width={12}
         height={6}
       />

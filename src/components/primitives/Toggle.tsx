@@ -4,16 +4,16 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../lib/cn";
 
 const toggleVariants = cva(
-  "inline-flex items-center justify-center font-nb font-medium text-nb-text border-nb border-nb-border rounded-nb transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center font-skin font-medium text-skin-text border-skin border-skin-border rounded-skin transition-all active:translate-x-[var(--skin-press-x)] active:translate-y-[var(--skin-press-y)] active:shadow-none disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
         filled:
-          "bg-nb-surface data-[state=on]:bg-nb-primary",
+          "bg-skin-surface data-[state=on]:bg-skin-primary",
         outline:
-          "bg-transparent data-[state=on]:bg-nb-surface",
+          "bg-transparent data-[state=on]:bg-skin-surface",
         ghost:
-          "border-transparent shadow-none data-[state=on]:border-nb-border data-[state=on]:bg-nb-surface",
+          "border-transparent shadow-none data-[state=on]:border-skin-border data-[state=on]:bg-skin-surface",
       },
       size: {
         sm: "h-8 px-2.5 text-sm gap-1.5",
@@ -22,9 +22,9 @@ const toggleVariants = cva(
       },
       shadow: {
         none: "",
-        sm: "shadow-nb-sm data-[state=on]:shadow-nb-sm",
-        md: "shadow-nb-md data-[state=on]:shadow-nb-md",
-        lg: "shadow-nb-lg data-[state=on]:shadow-nb-lg",
+        sm: "shadow-skin-sm data-[state=on]:shadow-skin-sm",
+        md: "shadow-skin-md data-[state=on]:shadow-skin-md",
+        lg: "shadow-skin-lg data-[state=on]:shadow-skin-lg",
       },
     },
     defaultVariants: {

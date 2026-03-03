@@ -1,6 +1,10 @@
 // Utilities
 export { cn } from "./lib/cn";
 export type {
+  KkuSize,
+  KkuColor,
+  KkuVariant,
+  KkuBaseProps,
   NeoBrutalSize,
   NeoBrutalColor,
   NeoBrutalVariant,

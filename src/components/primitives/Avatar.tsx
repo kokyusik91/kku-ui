@@ -4,7 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../lib/cn";
 
 const avatarVariants = cva(
-  "relative inline-flex shrink-0 overflow-hidden border-nb border-nb-border rounded-nb font-nb",
+  "relative inline-flex shrink-0 overflow-hidden border-skin border-skin-border rounded-skin font-skin",
   {
     variants: {
       size: {
@@ -14,9 +14,9 @@ const avatarVariants = cva(
       },
       shadow: {
         none: "",
-        sm: "shadow-nb-sm",
-        md: "shadow-nb-md",
-        lg: "shadow-nb-lg",
+        sm: "shadow-skin-sm",
+        md: "shadow-skin-md",
+        lg: "shadow-skin-lg",
       },
     },
     defaultVariants: {
@@ -63,13 +63,13 @@ export interface AvatarFallbackProps
 }
 
 const fallbackColorMap: Record<string, string> = {
-  primary: "bg-nb-primary",
-  secondary: "bg-nb-secondary",
-  accent: "bg-nb-accent",
-  success: "bg-nb-success",
-  warning: "bg-nb-warning",
-  danger: "bg-nb-danger",
-  info: "bg-nb-info",
+  primary: "bg-skin-primary",
+  secondary: "bg-skin-secondary",
+  accent: "bg-skin-accent",
+  success: "bg-skin-success",
+  warning: "bg-skin-warning",
+  danger: "bg-skin-danger",
+  info: "bg-skin-info",
 };
 
 export const AvatarFallback = React.forwardRef<
@@ -79,7 +79,7 @@ export const AvatarFallback = React.forwardRef<
   <AvatarPrimitive.Fallback
     ref={ref}
     className={cn(
-      "flex h-full w-full items-center justify-center font-nb font-bold text-nb-text",
+      "flex h-full w-full items-center justify-center font-skin font-bold text-skin-text",
       fallbackColorMap[color],
       className
     )}

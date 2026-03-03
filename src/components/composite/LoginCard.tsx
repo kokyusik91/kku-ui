@@ -27,11 +27,11 @@ export const LoginCard = React.forwardRef<HTMLDivElement, LoginCardProps>(
         className={cn("w-full max-w-sm", className)}
         {...props}
       >
-        <h2 className="font-nb text-2xl font-black text-center mb-6">{title}</h2>
+        <h2 className="font-skin text-2xl font-black text-center mb-6">{title}</h2>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="login-email" className="font-nb text-sm font-bold">
+            <label htmlFor="login-email" className="font-skin text-sm font-bold">
               Email
             </label>
             <Input
@@ -45,7 +45,7 @@ export const LoginCard = React.forwardRef<HTMLDivElement, LoginCardProps>(
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="login-password" className="font-nb text-sm font-bold">
+            <label htmlFor="login-password" className="font-skin text-sm font-bold">
               Password
             </label>
             <Input
@@ -67,10 +67,10 @@ export const LoginCard = React.forwardRef<HTMLDivElement, LoginCardProps>(
           <>
             <div className="relative my-6">
               <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t-2 border-nb-border" />
+                <div className="w-full border-t-2 border-skin-border" />
               </div>
               <div className="relative flex justify-center">
-                <span className="bg-nb-surface px-3 font-nb text-sm text-nb-text/60">
+                <span className="bg-skin-surface px-3 font-skin text-sm text-skin-text/60">
                   or continue with
                 </span>
               </div>

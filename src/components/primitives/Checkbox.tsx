@@ -4,7 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../lib/cn";
 
 const checkboxVariants = cva(
-  "peer inline-flex shrink-0 items-center justify-center border-nb border-nb-border rounded-nb font-nb transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-nb-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-nb-primary data-[state=checked]:text-nb-text",
+  "peer inline-flex shrink-0 items-center justify-center border-skin border-skin-border rounded-skin font-skin transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-skin-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-skin-primary data-[state=checked]:text-skin-text",
   {
     variants: {
       size: {
@@ -14,9 +14,9 @@ const checkboxVariants = cva(
       },
       shadow: {
         none: "",
-        sm: "shadow-nb-sm",
-        md: "shadow-nb-md",
-        lg: "shadow-nb-lg",
+        sm: "shadow-skin-sm",
+        md: "shadow-skin-md",
+        lg: "shadow-skin-lg",
       },
     },
     defaultVariants: {
@@ -58,7 +58,7 @@ export const Checkbox = React.forwardRef<
       {checkboxEl}
       <label
         htmlFor={checkboxId}
-        className="font-nb text-nb-text text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        className="font-skin text-skin-text text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
       >
         {label}
       </label>

@@ -35,9 +35,9 @@ export const DialogContent = React.forwardRef<
       className={cn(
         "fixed left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2",
         "w-full max-w-lg p-6",
-        "font-nb text-nb-text bg-nb-surface",
-        "border-nb border-nb-border rounded-nb shadow-nb-lg",
-        "animate-nb-pop",
+        "font-skin text-skin-text bg-skin-surface",
+        "border-skin border-skin-border rounded-skin shadow-skin-lg",
+        "animate-skin-pop",
         className
       )}
       {...props}
@@ -46,10 +46,10 @@ export const DialogContent = React.forwardRef<
       <DialogPrimitive.Close
         className={cn(
           "absolute right-4 top-4",
-          "inline-flex h-8 w-8 items-center justify-center rounded-nb",
-          "border-nb border-nb-border bg-nb-surface",
-          "font-nb text-nb-text font-bold text-sm",
-          "hover:bg-nb-accent hover:shadow-nb-sm",
+          "inline-flex h-8 w-8 items-center justify-center rounded-skin",
+          "border-skin border-skin-border bg-skin-surface",
+          "font-skin text-skin-text font-bold text-sm",
+          "hover:bg-skin-accent hover:shadow-skin-sm",
           "transition-shadow"
         )}
       >
@@ -66,7 +66,7 @@ export const DialogTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Title
     ref={ref}
-    className={cn("font-nb text-nb-text text-xl font-bold", className)}
+    className={cn("font-skin text-skin-text text-xl font-bold", className)}
     {...props}
   />
 ));
@@ -78,7 +78,7 @@ export const DialogDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Description
     ref={ref}
-    className={cn("font-nb text-nb-text/70 text-sm mt-2", className)}
+    className={cn("font-skin text-skin-text/70 text-sm mt-2", className)}
     {...props}
   />
 ));

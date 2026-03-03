@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/index.ts", "src/preset.ts"],
+  entry: ["src/index.ts", "src/presets/index.ts", "src/presets/neo-brutal.ts", "src/presets/modern.ts"],
   format: ["esm", "cjs"],
   dts: true,
   sourcemap: true,

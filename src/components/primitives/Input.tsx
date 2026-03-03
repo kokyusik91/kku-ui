@@ -5,13 +5,13 @@ import { cn } from "../../lib/cn";
 const inputVariants = cva(
   [
     "w-full",
-    "font-nb text-nb-text",
-    "bg-nb-surface",
-    "border-nb border-nb-border rounded-nb",
-    "shadow-nb-sm",
-    "placeholder:text-nb-text/40",
+    "font-skin text-skin-text",
+    "bg-skin-surface",
+    "border-skin border-skin-border rounded-skin",
+    "shadow-skin-sm",
+    "placeholder:text-skin-text/40",
     "transition-shadow duration-100",
-    "focus:outline-none focus:shadow-nb-md",
+    "focus:outline-none focus:shadow-skin-md",
     "disabled:opacity-50 disabled:cursor-not-allowed",
   ],
   {
@@ -22,7 +22,7 @@ const inputVariants = cva(
         lg: "h-12 px-5 text-lg",
       },
       error: {
-        true: "border-nb-danger focus:shadow-[4px_4px_0px_0px_theme(colors.nb.danger)]",
+        true: "border-skin-danger focus:shadow-[4px_4px_0px_0px_theme(colors.skin.danger)]",
         false: "",
       },
     },

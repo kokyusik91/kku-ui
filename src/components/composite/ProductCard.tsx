@@ -40,7 +40,7 @@ export const ProductCard = React.forwardRef<HTMLDivElement, ProductCardProps>(
           <img
             src={image}
             alt={title}
-            className="h-48 w-full object-cover border-b-2 border-nb-border"
+            className="h-48 w-full object-cover border-b-2 border-skin-border"
           />
           {badge && (
             <Badge color="danger" size="sm" className="absolute top-2 right-2">
@@ -50,12 +50,12 @@ export const ProductCard = React.forwardRef<HTMLDivElement, ProductCardProps>(
         </div>
 
         <div className="flex flex-col gap-3 p-4">
-          <h3 className="font-nb text-base font-bold leading-snug">{title}</h3>
+          <h3 className="font-skin text-base font-bold leading-snug">{title}</h3>
 
           <div className="flex items-baseline gap-2">
-            <span className="font-nb text-xl font-black">{price}</span>
+            <span className="font-skin text-xl font-black">{price}</span>
             {originalPrice && (
-              <span className="font-nb text-sm text-nb-text/50 line-through">
+              <span className="font-skin text-sm text-skin-text/50 line-through">
                 {originalPrice}
               </span>
             )}
@@ -68,13 +68,13 @@ export const ProductCard = React.forwardRef<HTMLDivElement, ProductCardProps>(
                   key={i}
                   className={cn(
                     "text-sm",
-                    i < Math.round(rating) ? "text-nb-warning" : "text-nb-text/20",
+                    i < Math.round(rating) ? "text-skin-warning" : "text-skin-text/20",
                   )}
                 >
                   &#9733;
                 </span>
               ))}
-              <span className="font-nb text-xs text-nb-text/60 ml-1">
+              <span className="font-skin text-xs text-skin-text/60 ml-1">
                 {rating.toFixed(1)}
               </span>
             </div>

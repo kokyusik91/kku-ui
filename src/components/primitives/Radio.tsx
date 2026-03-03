@@ -18,7 +18,7 @@ export const RadioGroup = React.forwardRef<
   <RadioGroupPrimitive.Root
     ref={ref}
     className={cn(
-      "font-nb",
+      "font-skin",
       orientationStyles[orientation],
       className
     )}
@@ -29,7 +29,7 @@ export const RadioGroup = React.forwardRef<
 RadioGroup.displayName = "RadioGroup";
 
 const radioItemVariants = cva(
-  "aspect-square rounded-full border-nb border-nb-border bg-nb-surface text-nb-text transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-nb-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+  "aspect-square rounded-full border-skin border-skin-border bg-skin-surface text-skin-text transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-skin-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: {
       size: {
@@ -39,9 +39,9 @@ const radioItemVariants = cva(
       },
       shadow: {
         none: "",
-        sm: "shadow-nb-sm",
-        md: "shadow-nb-md",
-        lg: "shadow-nb-lg",
+        sm: "shadow-skin-sm",
+        md: "shadow-skin-md",
+        lg: "shadow-skin-lg",
       },
     },
     defaultVariants: {
@@ -83,7 +83,7 @@ export const RadioGroupItem = React.forwardRef<
       {radioEl}
       <label
         htmlFor={radioId}
-        className="font-nb text-nb-text text-sm leading-none"
+        className="font-skin text-skin-text text-sm leading-none"
       >
         {label}
       </label>
@@ -97,7 +97,7 @@ function RadioDot({ size }: { size?: "sm" | "md" | "lg" | null }) {
   return (
     <span
       className={cn(
-        "block rounded-full bg-nb-primary",
+        "block rounded-full bg-skin-primary",
         sizeMap[size || "md"]
       )}
     />

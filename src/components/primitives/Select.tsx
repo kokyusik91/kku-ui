@@ -8,7 +8,7 @@ export const SelectGroup = SelectPrimitive.Group;
 export const SelectValue = SelectPrimitive.Value;
 
 const selectTriggerVariants = cva(
-  "inline-flex items-center justify-between font-nb text-nb-text border-nb border-nb-border rounded-nb bg-nb-surface transition-all placeholder:text-nb-text/50 focus:outline-none focus:ring-2 focus:ring-nb-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+  "inline-flex items-center justify-between font-skin text-skin-text border-skin border-skin-border rounded-skin bg-skin-surface transition-all placeholder:text-skin-text/50 focus:outline-none focus:ring-2 focus:ring-skin-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
   {
     variants: {
       size: {
@@ -18,9 +18,9 @@ const selectTriggerVariants = cva(
       },
       shadow: {
         none: "",
-        sm: "shadow-nb-sm",
-        md: "shadow-nb-md",
-        lg: "shadow-nb-lg",
+        sm: "shadow-skin-sm",
+        md: "shadow-skin-md",
+        lg: "shadow-skin-lg",
       },
     },
     defaultVariants: {
@@ -62,7 +62,7 @@ export const SelectContent = React.forwardRef<
     <SelectPrimitive.Content
       ref={ref}
       className={cn(
-        "relative z-50 max-h-96 min-w-[8rem] overflow-hidden border-nb border-nb-border rounded-nb bg-nb-surface shadow-nb-md font-nb text-nb-text animate-nb-pop",
+        "relative z-50 max-h-96 min-w-[8rem] overflow-hidden border-skin border-skin-border rounded-skin bg-skin-surface shadow-skin-md font-skin text-skin-text animate-skin-pop",
         position === "popper" &&
           "data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1",
         className
@@ -96,7 +96,7 @@ export const SelectItem = React.forwardRef<
   <SelectPrimitive.Item
     ref={ref}
     className={cn(
-      "relative flex w-full cursor-pointer select-none items-center rounded-nb py-2 pl-8 pr-3 text-sm font-nb outline-none transition-colors focus:bg-nb-accent/40 data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+      "relative flex w-full cursor-pointer select-none items-center rounded-skin py-2 pl-8 pr-3 text-sm font-skin outline-none transition-colors focus:bg-skin-accent/40 data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
       className
     )}
     {...props}
@@ -120,7 +120,7 @@ export const SelectLabel = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <SelectPrimitive.Label
     ref={ref}
-    className={cn("px-8 py-1.5 text-sm font-nb font-bold text-nb-text", className)}
+    className={cn("px-8 py-1.5 text-sm font-skin font-bold text-skin-text", className)}
     {...props}
   />
 ));
@@ -135,7 +135,7 @@ export const SelectSeparator = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <SelectPrimitive.Separator
     ref={ref}
-    className={cn("-mx-1 my-1 h-[3px] bg-nb-border", className)}
+    className={cn("-mx-1 my-1 h-[3px] bg-skin-border", className)}
     {...props}
   />
 ));

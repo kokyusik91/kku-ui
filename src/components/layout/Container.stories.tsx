@@ -15,8 +15,8 @@ type Story = StoryObj<typeof Container>;
 export const Default: Story = {
   args: {
     children: (
-      <div className="border-nb border-nb-border rounded-nb bg-nb-accent/30 p-4">
-        <p className="font-nb text-center">Container (lg - 1024px)</p>
+      <div className="border-skin border-skin-border rounded-skin bg-skin-accent/30 p-4">
+        <p className="font-skin text-center">Container (lg - 1024px)</p>
       </div>
     ),
   },
@@ -27,8 +27,8 @@ export const Sizes: Story = {
     <div className="flex flex-col gap-4">
       {(["sm", "md", "lg", "xl", "full"] as const).map((s) => (
         <Container key={s} size={s}>
-          <div className="border-nb border-nb-border rounded-nb bg-nb-secondary/20 p-3">
-            <p className="font-nb text-center text-sm">{s}</p>
+          <div className="border-skin border-skin-border rounded-skin bg-skin-secondary/20 p-3">
+            <p className="font-skin text-center text-sm">{s}</p>
           </div>
         </Container>
       ))}

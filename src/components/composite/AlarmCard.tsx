@@ -28,10 +28,10 @@ export const AlarmCard = React.forwardRef<HTMLDivElement, AlarmCardProps>(
         {...props}
       >
         <div className="flex flex-1 flex-col gap-2">
-          <span className="font-nb text-3xl font-bold leading-none text-nb-text">
+          <span className="font-skin text-3xl font-bold leading-none text-skin-text">
             {time}
           </span>
-          <span className="font-nb text-sm font-medium text-nb-text/70">
+          <span className="font-skin text-sm font-medium text-skin-text/70">
             {label}
           </span>
           <div className="flex flex-wrap gap-1.5">
@@ -52,7 +52,7 @@ export const AlarmCard = React.forwardRef<HTMLDivElement, AlarmCardProps>(
           {onDelete && (
             <button
               onClick={onDelete}
-              className="font-nb text-xs font-semibold text-nb-danger hover:underline"
+              className="font-skin text-xs font-semibold text-skin-danger hover:underline"
               aria-label={`Delete ${label}`}
             >
               Delete

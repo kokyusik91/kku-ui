@@ -25,10 +25,10 @@ ToastViewport.displayName = "ToastViewport";
 const toastVariants = cva(
   [
     "group pointer-events-auto relative flex w-full items-center gap-3 overflow-hidden",
-    "p-4 font-nb text-nb-text",
-    "border-nb border-nb-border rounded-nb shadow-nb-md",
-    "bg-nb-surface",
-    "data-[state=open]:animate-nb-pop",
+    "p-4 font-skin text-skin-text",
+    "border-skin border-skin-border rounded-skin shadow-skin-md",
+    "bg-skin-surface",
+    "data-[state=open]:animate-skin-pop",
     "data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)]",
     "data-[swipe=cancel]:translate-x-0 data-[swipe=cancel]:transition-transform",
     "data-[swipe=end]:translate-x-[var(--radix-toast-swipe-end-x)]",
@@ -36,11 +36,11 @@ const toastVariants = cva(
   {
     variants: {
       variant: {
-        default: "border-l-[6px] border-l-nb-border",
-        success: "border-l-[6px] border-l-nb-success",
-        error: "border-l-[6px] border-l-nb-danger",
-        warning: "border-l-[6px] border-l-nb-warning",
-        info: "border-l-[6px] border-l-nb-info",
+        default: "border-l-[6px] border-l-skin-border",
+        success: "border-l-[6px] border-l-skin-success",
+        error: "border-l-[6px] border-l-skin-danger",
+        warning: "border-l-[6px] border-l-skin-warning",
+        info: "border-l-[6px] border-l-skin-info",
       },
     },
     defaultVariants: {
@@ -71,7 +71,7 @@ export const ToastTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <ToastPrimitive.Title
     ref={ref}
-    className={cn("font-nb text-nb-text text-sm font-bold", className)}
+    className={cn("font-skin text-skin-text text-sm font-bold", className)}
     {...props}
   />
 ));
@@ -83,7 +83,7 @@ export const ToastDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <ToastPrimitive.Description
     ref={ref}
-    className={cn("font-nb text-nb-text/70 text-sm", className)}
+    className={cn("font-skin text-skin-text/70 text-sm", className)}
     {...props}
   />
 ));
@@ -97,9 +97,9 @@ export const ToastAction = React.forwardRef<
     ref={ref}
     className={cn(
       "inline-flex items-center justify-center shrink-0",
-      "px-3 py-1 text-sm font-bold font-nb",
-      "border-nb border-nb-border rounded-nb bg-nb-surface",
-      "hover:bg-nb-accent hover:shadow-nb-sm",
+      "px-3 py-1 text-sm font-bold font-skin",
+      "border-skin border-skin-border rounded-skin bg-skin-surface",
+      "hover:bg-skin-accent hover:shadow-skin-sm",
       "transition-shadow",
       className
     )}
@@ -116,9 +116,9 @@ export const ToastClose = React.forwardRef<
     ref={ref}
     className={cn(
       "absolute right-2 top-2",
-      "inline-flex h-6 w-6 items-center justify-center rounded-nb",
-      "text-nb-text/50 hover:text-nb-text",
-      "font-nb text-xs font-bold",
+      "inline-flex h-6 w-6 items-center justify-center rounded-skin",
+      "text-skin-text/50 hover:text-skin-text",
+      "font-skin text-xs font-bold",
       className
     )}
     {...props}

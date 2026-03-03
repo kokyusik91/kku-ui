@@ -3,7 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../lib/cn";
 
 const tableWrapperVariants = cva(
-  "w-full overflow-auto border-nb border-nb-border rounded-nb shadow-nb-md",
+  "w-full overflow-auto border-skin border-skin-border rounded-skin shadow-skin-md",
   {
     variants: {
       size: {
@@ -31,8 +31,8 @@ export const Table = React.forwardRef<HTMLTableElement, TableProps>(
         <table
           ref={ref}
           className={cn(
-            "w-full caption-bottom font-nb text-nb-text",
-            striped && "[&_tbody_tr:nth-child(even)]:bg-nb-bg",
+            "w-full caption-bottom font-skin text-skin-text",
+            striped && "[&_tbody_tr:nth-child(even)]:bg-skin-bg",
             className
           )}
           {...props}
@@ -52,7 +52,7 @@ export const TableHeader = React.forwardRef<
   <thead
     ref={ref}
     className={cn(
-      "border-b-nb border-nb-border bg-nb-accent font-bold",
+      "border-b-skin border-skin-border bg-skin-accent font-bold",
       className
     )}
     {...props}
@@ -79,7 +79,7 @@ export const TableRow = React.forwardRef<
   <tr
     ref={ref}
     className={cn(
-      "border-b-nb border-nb-border transition-colors hover:bg-nb-bg/50",
+      "border-b-skin border-skin-border transition-colors hover:bg-skin-bg/50",
       className
     )}
     {...props}
@@ -94,7 +94,7 @@ export const TableHead = React.forwardRef<
   <th
     ref={ref}
     className={cn(
-      "h-12 px-4 text-left align-middle font-bold text-nb-text",
+      "h-12 px-4 text-left align-middle font-bold text-skin-text",
       className
     )}
     {...props}

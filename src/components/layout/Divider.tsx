@@ -2,7 +2,7 @@ import React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../lib/cn";
 
-const dividerVariants = cva("border-nb-border shrink-0", {
+const dividerVariants = cva("border-skin-border shrink-0", {
   variants: {
     orientation: {
       horizontal: "w-full border-t-[3px]",
@@ -31,11 +31,11 @@ export const Divider = React.forwardRef<HTMLDivElement, DividerProps>(
           className={cn("flex items-center gap-3 w-full", className)}
           {...props}
         >
-          <div className="flex-1 border-t-[3px] border-nb-border" />
-          <span className="font-nb text-nb-text text-sm font-medium px-2">
+          <div className="flex-1 border-t-[3px] border-skin-border" />
+          <span className="font-skin text-skin-text text-sm font-medium px-2">
             {label}
           </span>
-          <div className="flex-1 border-t-[3px] border-nb-border" />
+          <div className="flex-1 border-t-[3px] border-skin-border" />
         </div>
       );
     }

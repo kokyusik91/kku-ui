@@ -5,8 +5,8 @@ import { cn } from "../../lib/cn";
 const badgeVariants = cva(
   [
     "inline-flex items-center justify-center",
-    "font-nb font-semibold text-nb-text",
-    "border-nb border-nb-border rounded-nb",
+    "font-skin font-semibold text-skin-text",
+    "border-skin border-skin-border rounded-skin",
   ],
   {
     variants: {
@@ -30,47 +30,47 @@ const badgeVariants = cva(
       },
     },
     compoundVariants: [
-      { variant: "filled", color: "primary", className: "bg-nb-primary" },
-      { variant: "filled", color: "secondary", className: "bg-nb-secondary" },
-      { variant: "filled", color: "accent", className: "bg-nb-accent" },
-      { variant: "filled", color: "success", className: "bg-nb-success" },
-      { variant: "filled", color: "warning", className: "bg-nb-warning" },
-      { variant: "filled", color: "danger", className: "bg-nb-danger" },
-      { variant: "filled", color: "info", className: "bg-nb-info text-white" },
+      { variant: "filled", color: "primary", className: "bg-skin-primary" },
+      { variant: "filled", color: "secondary", className: "bg-skin-secondary" },
+      { variant: "filled", color: "accent", className: "bg-skin-accent" },
+      { variant: "filled", color: "success", className: "bg-skin-success" },
+      { variant: "filled", color: "warning", className: "bg-skin-warning" },
+      { variant: "filled", color: "danger", className: "bg-skin-danger" },
+      { variant: "filled", color: "info", className: "bg-skin-info text-white" },
       {
         variant: "outline",
         color: "primary",
-        className: "text-nb-primary border-nb-primary",
+        className: "text-skin-primary border-skin-primary",
       },
       {
         variant: "outline",
         color: "secondary",
-        className: "text-nb-secondary border-nb-secondary",
+        className: "text-skin-secondary border-skin-secondary",
       },
       {
         variant: "outline",
         color: "accent",
-        className: "text-nb-accent border-nb-accent",
+        className: "text-skin-accent border-skin-accent",
       },
       {
         variant: "outline",
         color: "success",
-        className: "text-nb-success border-nb-success",
+        className: "text-skin-success border-skin-success",
       },
       {
         variant: "outline",
         color: "warning",
-        className: "text-nb-warning border-nb-warning",
+        className: "text-skin-warning border-skin-warning",
       },
       {
         variant: "outline",
         color: "danger",
-        className: "text-nb-danger border-nb-danger",
+        className: "text-skin-danger border-skin-danger",
       },
       {
         variant: "outline",
         color: "info",
-        className: "text-nb-info border-nb-info",
+        className: "text-skin-info border-skin-info",
       },
     ],
     defaultVariants: {

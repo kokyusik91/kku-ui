@@ -2,12 +2,12 @@ import React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../lib/cn";
 
-const listVariants = cva("font-nb text-nb-text", {
+const listVariants = cva("font-skin text-skin-text", {
   variants: {
     variant: {
       plain: "space-y-1",
       bordered:
-        "divide-y-[3px] divide-nb-border border-nb border-nb-border rounded-nb overflow-hidden",
+        "divide-y-[3px] divide-skin-border border-skin border-skin-border rounded-skin overflow-hidden",
       card: "space-y-3",
     },
     size: {
@@ -26,8 +26,8 @@ const listItemVariants = cva("flex items-center gap-3", {
   variants: {
     variant: {
       plain: "py-1",
-      bordered: "px-4 py-3 bg-nb-surface",
-      card: "px-4 py-3 border-nb border-nb-border rounded-nb bg-nb-surface shadow-nb-sm",
+      bordered: "px-4 py-3 bg-skin-surface",
+      card: "px-4 py-3 border-skin border-skin-border rounded-skin bg-skin-surface shadow-skin-sm",
     },
   },
   defaultVariants: {
