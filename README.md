@@ -1,19 +1,21 @@
-# @kokyusik91/neo-brutal-ui
+# @kokyusik91/kku-ui
 
-Radix UI + CVA 기반 네오 브루탈리즘 디자인 키트.
+멀티 스킨 디자인 키트 — Radix UI + CVA + Tailwind CSS Custom Properties 기반.
 
 ## Features
 
 - **28개 컴포넌트** — Primitives, Layout, Feedback, Data Display, Composite
+- **멀티 스킨** — neo-brutal, modern 등 스킨 교체만으로 전체 디자인 변경
+- **다크모드** — `class="dark"` 추가로 자동 전환
 - **Radix UI** — 접근성 보장된 headless 프리미티브 기반
 - **CVA** — 타입 안전한 variant 관리
-- **Tailwind CSS** — 커스텀 프리셋으로 디자인 토큰 통합
+- **Tailwind CSS** — CSS Custom Properties 기반 디자인 토큰
 - **Tree-shakable** — ESM/CJS 듀얼 빌드
 
 ## Install
 
 ```bash
-pnpm add @kokyusik91/neo-brutal-ui
+pnpm add @kokyusik91/kku-ui
 ```
 
 `.npmrc`에 레지스트리 설정:
@@ -27,25 +29,71 @@ pnpm add @kokyusik91/neo-brutal-ui
 
 ### Tailwind CSS
 
-`tailwind.config.ts`에 프리셋 추가:
+`tailwind.config.ts`에 원하는 스킨 프리셋 추가:
 
 ```ts
-import { neoBrutalPreset } from "@kokyusik91/neo-brutal-ui/preset";
+// Neo-brutal 스킨 (볼드 보더, 오프셋 쉐도우, Space Grotesk)
+import { neoBrutalPreset } from "@kokyusik91/kku-ui/preset/neo-brutal";
+
+// Modern 스킨 (미니멀, 소프트 쉐도우, Pretendard)
+// import { modernPreset } from "@kokyusik91/kku-ui/preset/modern";
 
 export default {
   content: [
     "./src/**/*.{ts,tsx}",
-    "./node_modules/@kokyusik91/neo-brutal-ui/dist/**/*.js",
+    "./node_modules/@kokyusik91/kku-ui/dist/**/*.js",
   ],
   presets: [neoBrutalPreset],
+  // presets: [modernPreset],  // 스킨 교체는 이 한 줄만 바꾸면 끝!
 };
 ```
 
-### Font (optional)
+### Font
 
 ```html
+<!-- Neo-brutal -->
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Modern -->
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
 ```
+
+### Dark Mode
+
+```html
+<!-- html에 dark 클래스 추가하면 자동 전환 -->
+<html class="dark">
+```
+
+## Skins
+
+### Neo-brutal
+
+볼드한 3px 보더, 하드 오프셋 쉐도우, 코랄 레드 프라이머리.
+
+| Token | Light | Dark |
+|-------|-------|------|
+| `skin-primary` | `#FF6B6B` | `#FF8A8A` |
+| `skin-secondary` | `#4ECDC4` | `#6EE7D8` |
+| `skin-accent` | `#FFE66D` | `#FFD93D` |
+| Border | `3px` | `3px` |
+| Radius | `12px` | `12px` |
+| Shadow | `4px 4px 0px` offset | `4px 4px 0px` offset |
+| Font | Space Grotesk | Space Grotesk |
+
+### Modern
+
+토스 스타일 미니멀 디자인. 1px 보더, 소프트 쉐도우.
+
+| Token | Light | Dark |
+|-------|-------|------|
+| `skin-primary` | `#3182F6` | `#4C9AFF` |
+| `skin-secondary` | `#00C9B7` | `#3DD9C6` |
+| `skin-accent` | `#FFC107` | `#FFD54F` |
+| Border | `1px` | `1px` |
+| Radius | `8px` | `8px` |
+| Shadow | soft blur | soft blur |
+| Font | Pretendard | Pretendard |
 
 ## Components
 
@@ -94,13 +142,13 @@ export default {
 ## Usage
 
 ```tsx
-import { Button, Card, Badge } from "@kokyusik91/neo-brutal-ui";
+import { Button, Card, Badge } from "@kokyusik91/kku-ui";
 
 function App() {
   return (
     <Card shadow="lg" padding="lg">
       <Badge color="accent">New</Badge>
-      <h2>Hello Neo Brutal!</h2>
+      <h2>Hello KKU-UI!</h2>
       <Button color="primary" onClick={() => alert("clicked!")}>
         Click me
       </Button>
@@ -109,23 +157,18 @@ function App() {
 }
 ```
 
-## Design Tokens
+## Architecture
 
-| Token | Value |
-|-------|-------|
-| `nb-primary` | `#FF6B6B` |
-| `nb-secondary` | `#4ECDC4` |
-| `nb-accent` | `#FFE66D` |
-| `nb-success` | `#51CF66` |
-| `nb-warning` | `#FF922B` |
-| `nb-danger` | `#FF6B6B` |
-| `nb-info` | `#339AF0` |
-| `nb-bg` | `#FFF8E7` |
-| `nb-text` | `#1A1A2E` |
-| Border | `3px solid #1A1A2E` |
-| Shadow (md) | `4px 4px 0px 0px #1A1A2E` |
-| Radius | `12px` |
-| Font | `Space Grotesk` |
+```
+[Skin Preset] → :root { --skin-primary: #FF6B6B; ... }
+              → .dark { --skin-primary: #FF8A8A; ... }
+                   ↓
+[Shared Theme] → colors.skin.primary: "var(--skin-primary)"
+                   ↓
+[Components]   → className="bg-skin-primary text-skin-text"
+```
+
+스킨이 바뀌어도 컴포넌트 코드는 변경 없음. preset만 교체하면 끝.
 
 ## Development
 
