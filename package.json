@@ -1,7 +1,7 @@
 {
-  "name": "@kokyusik91/neo-brutal-ui",
+  "name": "@kokyusik91/kku-ui",
   "version": "0.1.0",
-  "description": "Neo-brutalism design kit built on Radix UI primitives with CVA variants",
+  "description": "Multi-skin design kit built on Radix UI primitives with CVA variants",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -53,7 +53,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kokyusik91/neo-brutal-ui.git"
+    "url": "https://github.com/kokyusik91/kku-ui.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
