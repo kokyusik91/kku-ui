@@ -5,7 +5,7 @@ import { cn } from "../../lib/cn";
 const buttonVariants = cva(
   [
     "inline-flex items-center justify-center gap-2",
-    "font-skin font-semibold text-skin-text",
+    "font-skin font-skin-semibold text-skin-text",
     "border-skin border-skin-border rounded-skin",
     "transition-all duration-100",
     "active:translate-x-[var(--skin-press-x)] active:translate-y-[var(--skin-press-y)] active:shadow-none",

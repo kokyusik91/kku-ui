@@ -53,7 +53,7 @@ export const SocialPost = React.forwardRef<HTMLDivElement, SocialPostProps>(
             <AvatarFallback color="accent">{initials}</AvatarFallback>
           </Avatar>
           <div className="flex flex-col">
-            <span className="font-skin text-sm font-bold">{author.name}</span>
+            <span className="font-skin text-sm font-skin-bold">{author.name}</span>
             <span className="font-skin text-xs text-skin-text/50">
               @{author.handle} &middot; {timestamp}
             </span>

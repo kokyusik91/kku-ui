@@ -16,7 +16,7 @@ export const TooltipContent = React.forwardRef<
       sideOffset={sideOffset}
       className={cn(
         "z-50 px-3 py-1.5",
-        "font-skin text-skin-text text-sm font-medium",
+        "font-skin text-skin-text text-sm font-skin-medium",
         "bg-skin-surface border-skin border-skin-border rounded-skin shadow-skin-sm",
         "animate-skin-pop",
         className

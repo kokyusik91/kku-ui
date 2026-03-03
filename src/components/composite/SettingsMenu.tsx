@@ -28,7 +28,7 @@ export const SettingsMenu = React.forwardRef<HTMLDivElement, SettingsMenuProps>(
       >
         {title && (
           <div className="px-5 pt-5 pb-3">
-            <h3 className="font-skin text-lg font-bold text-skin-text">{title}</h3>
+            <h3 className="font-skin text-lg font-skin-bold text-skin-text">{title}</h3>
           </div>
         )}
         <div className="flex flex-col">
@@ -37,7 +37,7 @@ export const SettingsMenu = React.forwardRef<HTMLDivElement, SettingsMenuProps>(
               {index > 0 && <Divider />}
               <div className="flex items-center justify-between gap-4 px-5 py-4">
                 <div className="flex flex-col gap-0.5">
-                  <span className="font-skin font-semibold text-skin-text">
+                  <span className="font-skin font-skin-semibold text-skin-text">
                     {item.label}
                   </span>
                   {item.description && (

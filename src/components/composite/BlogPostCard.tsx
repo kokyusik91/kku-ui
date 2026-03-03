@@ -64,7 +64,7 @@ export const BlogPostCard = React.forwardRef<
             </div>
           )}
 
-          <h3 className="font-skin text-lg font-bold text-skin-text leading-snug">
+          <h3 className="font-skin text-lg font-skin-bold text-skin-text leading-snug">
             {title}
           </h3>
           <p className="font-skin text-sm text-skin-text/70 mt-1.5 line-clamp-2">
@@ -86,7 +86,7 @@ export const BlogPostCard = React.forwardRef<
             )}
           </Avatar>
           <div className="flex flex-col">
-            <span className="font-skin text-sm font-semibold text-skin-text">
+            <span className="font-skin text-sm font-skin-semibold text-skin-text">
               {author.name}
             </span>
             <span className="font-skin text-xs text-skin-text/50">{date}</span>

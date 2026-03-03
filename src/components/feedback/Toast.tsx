@@ -71,7 +71,7 @@ export const ToastTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <ToastPrimitive.Title
     ref={ref}
-    className={cn("font-skin text-skin-text text-sm font-bold", className)}
+    className={cn("font-skin text-skin-text text-sm font-skin-bold", className)}
     {...props}
   />
 ));
@@ -97,7 +97,7 @@ export const ToastAction = React.forwardRef<
     ref={ref}
     className={cn(
       "inline-flex items-center justify-center shrink-0",
-      "px-3 py-1 text-sm font-bold font-skin",
+      "px-3 py-1 text-sm font-skin-bold font-skin",
       "border-skin border-skin-border rounded-skin bg-skin-surface",
       "hover:bg-skin-accent hover:shadow-skin-sm",
       "transition-shadow",
@@ -118,7 +118,7 @@ export const ToastClose = React.forwardRef<
       "absolute right-2 top-2",
       "inline-flex h-6 w-6 items-center justify-center rounded-skin",
       "text-skin-text/50 hover:text-skin-text",
-      "font-skin text-xs font-bold",
+      "font-skin text-xs font-skin-bold",
       className
     )}
     {...props}

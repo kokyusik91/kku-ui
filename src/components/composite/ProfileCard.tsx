@@ -45,7 +45,7 @@ export const ProfileCard = React.forwardRef<HTMLDivElement, ProfileCardProps>(
             )}
           </Avatar>
 
-          <h3 className="font-skin text-lg font-bold text-skin-text mt-3">
+          <h3 className="font-skin text-lg font-skin-bold text-skin-text mt-3">
             {name}
           </h3>
           {bio && (
@@ -64,7 +64,7 @@ export const ProfileCard = React.forwardRef<HTMLDivElement, ProfileCardProps>(
                     key={stat.label}
                     className="flex flex-col items-center gap-0.5"
                   >
-                    <span className="font-skin text-lg font-bold text-skin-text">
+                    <span className="font-skin text-lg font-skin-bold text-skin-text">
                       {stat.value}
                     </span>
                     <span className="font-skin text-xs text-skin-text/60">

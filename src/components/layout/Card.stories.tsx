@@ -17,7 +17,7 @@ export const Default: Story = {
   args: {
     children: (
       <div>
-        <h3 className="font-skin text-lg font-bold">Card Title</h3>
+        <h3 className="font-skin text-lg font-skin-bold">Card Title</h3>
         <p className="font-skin text-sm text-skin-text/70 mt-2">
           This is a neo-brutal card component with thick borders and bold shadows.
         </p>

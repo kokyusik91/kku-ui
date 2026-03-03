@@ -4,7 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../lib/cn";
 
 const toggleVariants = cva(
-  "inline-flex items-center justify-center font-skin font-medium text-skin-text border-skin border-skin-border rounded-skin transition-all active:translate-x-[var(--skin-press-x)] active:translate-y-[var(--skin-press-y)] active:shadow-none disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center font-skin font-skin-medium text-skin-text border-skin border-skin-border rounded-skin transition-all active:translate-x-[var(--skin-press-x)] active:translate-y-[var(--skin-press-y)] active:shadow-none disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {

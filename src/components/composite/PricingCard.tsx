@@ -64,7 +64,7 @@ export const PricingCard = React.forwardRef<HTMLDivElement, PricingCardProps>(
         )}
 
         <div className="text-center">
-          <h3 className="font-skin text-lg font-bold">{title}</h3>
+          <h3 className="font-skin text-lg font-skin-bold">{title}</h3>
           <div className="mt-2 flex items-baseline justify-center gap-1">
             <span className="font-skin text-4xl font-black">{price}</span>
             <span className="font-skin text-sm text-skin-text/60">{period}</span>
@@ -74,7 +74,7 @@ export const PricingCard = React.forwardRef<HTMLDivElement, PricingCardProps>(
         <ul className="flex flex-col gap-2">
           {features.map((feature) => (
             <li key={feature} className="flex items-center gap-2 font-skin text-sm">
-              <span className="text-skin-success font-bold">&#10003;</span>
+              <span className="text-skin-success font-skin-bold">&#10003;</span>
               {feature}
             </li>
           ))}

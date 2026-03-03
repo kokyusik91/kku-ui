@@ -24,6 +24,9 @@ const neoBrutalPlugin = plugin(({ addBase }) => {
       "--skin-font": "'Space Grotesk', system-ui, -apple-system, sans-serif",
       "--skin-press-x": "2px",
       "--skin-press-y": "2px",
+      "--skin-fw-medium": "500",
+      "--skin-fw-semibold": "600",
+      "--skin-fw-bold": "700",
     },
     ".dark": {
       "--skin-primary": "#FF8A8A",

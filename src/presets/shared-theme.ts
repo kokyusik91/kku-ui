@@ -31,6 +31,11 @@ export const sharedTheme: Partial<Config["theme"]> = {
     fontFamily: {
       skin: "var(--skin-font)",
     },
+    fontWeight: {
+      "skin-medium": "var(--skin-fw-medium)",
+      "skin-semibold": "var(--skin-fw-semibold)",
+      "skin-bold": "var(--skin-fw-bold)",
+    },
     keyframes: {
       "skin-press": {
         "0%": { transform: "translate(0, 0)" },

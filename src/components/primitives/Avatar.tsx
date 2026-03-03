@@ -79,7 +79,7 @@ export const AvatarFallback = React.forwardRef<
   <AvatarPrimitive.Fallback
     ref={ref}
     className={cn(
-      "flex h-full w-full items-center justify-center font-skin font-bold text-skin-text",
+      "flex h-full w-full items-center justify-center font-skin font-skin-bold text-skin-text",
       fallbackColorMap[color],
       className
     )}

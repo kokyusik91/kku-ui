@@ -31,7 +31,7 @@ export const LoginCard = React.forwardRef<HTMLDivElement, LoginCardProps>(
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="login-email" className="font-skin text-sm font-bold">
+            <label htmlFor="login-email" className="font-skin text-sm font-skin-bold">
               Email
             </label>
             <Input
@@ -45,7 +45,7 @@ export const LoginCard = React.forwardRef<HTMLDivElement, LoginCardProps>(
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="login-password" className="font-skin text-sm font-bold">
+            <label htmlFor="login-password" className="font-skin text-sm font-skin-bold">
               Password
             </label>
             <Input

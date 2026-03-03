@@ -40,7 +40,7 @@ export const MessageBubble = React.forwardRef<
       )}
       <div className={cn("flex flex-col gap-1", isSent ? "items-end" : "items-start")}>
         {!isSent && senderName && (
-          <span className="font-skin text-xs font-semibold text-skin-text/70 px-1">
+          <span className="font-skin text-xs font-skin-semibold text-skin-text/70 px-1">
             {senderName}
           </span>
         )}

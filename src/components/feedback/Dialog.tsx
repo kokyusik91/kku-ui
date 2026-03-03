@@ -48,7 +48,7 @@ export const DialogContent = React.forwardRef<
           "absolute right-4 top-4",
           "inline-flex h-8 w-8 items-center justify-center rounded-skin",
           "border-skin border-skin-border bg-skin-surface",
-          "font-skin text-skin-text font-bold text-sm",
+          "font-skin text-skin-text font-skin-bold text-sm",
           "hover:bg-skin-accent hover:shadow-skin-sm",
           "transition-shadow"
         )}
@@ -66,7 +66,7 @@ export const DialogTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Title
     ref={ref}
-    className={cn("font-skin text-skin-text text-xl font-bold", className)}
+    className={cn("font-skin text-skin-text text-xl font-skin-bold", className)}
     {...props}
   />
 ));

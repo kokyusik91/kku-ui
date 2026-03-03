@@ -24,6 +24,9 @@ const modernPlugin = plugin(({ addBase }) => {
       "--skin-font": "'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
       "--skin-press-x": "0px",
       "--skin-press-y": "0px",
+      "--skin-fw-medium": "400",
+      "--skin-fw-semibold": "500",
+      "--skin-fw-bold": "600",
     },
     ".dark": {
       "--skin-primary": "#4C9AFF",

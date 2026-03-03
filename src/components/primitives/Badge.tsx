@@ -5,7 +5,7 @@ import { cn } from "../../lib/cn";
 const badgeVariants = cva(
   [
     "inline-flex items-center justify-center",
-    "font-skin font-semibold text-skin-text",
+    "font-skin font-skin-semibold text-skin-text",
     "border-skin border-skin-border rounded-skin",
   ],
   {

@@ -32,7 +32,7 @@ export const Divider = React.forwardRef<HTMLDivElement, DividerProps>(
           {...props}
         >
           <div className="flex-1 border-t-[3px] border-skin-border" />
-          <span className="font-skin text-skin-text text-sm font-medium px-2">
+          <span className="font-skin text-skin-text text-sm font-skin-medium px-2">
             {label}
           </span>
           <div className="flex-1 border-t-[3px] border-skin-border" />

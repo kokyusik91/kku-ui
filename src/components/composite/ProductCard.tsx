@@ -50,7 +50,7 @@ export const ProductCard = React.forwardRef<HTMLDivElement, ProductCardProps>(
         </div>
 
         <div className="flex flex-col gap-3 p-4">
-          <h3 className="font-skin text-base font-bold leading-snug">{title}</h3>
+          <h3 className="font-skin text-base font-skin-bold leading-snug">{title}</h3>
 
           <div className="flex items-baseline gap-2">
             <span className="font-skin text-xl font-black">{price}</span>
